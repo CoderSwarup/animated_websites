@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&family=Julee&family=Lakki+Reddy&family=Nosifer&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --c: #c41212;
+}
+
+.new:root {
+  --c: #6c42ae;
+}
+@font-face {
+  font-family: "Canopee";
+  src: url("https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/616fd1dd00cf6c70f978fc69_Canopee.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  color: #fff;
+  overflow: hidden;
+}
+
+img {
+  object-fit: cover;
+}
+
+#main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 0 3rem;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h2 {
+  font-size: 30px;
+  font-weight: 900;
+  color: #fff;
+}
+
+.logo h2 span {
+  font-size: 30px;
+  font-weight: 900;
+  color: var(--c);
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+li {
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.icons i {
+  font-size: 20px !important;
+}
+
+.main-section {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sub-text {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: xx-large;
+  font-weight: 800;
+}
+
+.main-text h1 {
+  font-size: 10vw;
+  letter-spacing: 1px;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: -2.57px;
+  line-height: 100%;
+}
+
+.bottom-section {
+  position: fixed;
+  width: 100%;
+  bottom: 5%;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3em;
+}
+
+.desc {
+  width: 20%;
+  font-size: 1rem;
+  color: #999;
+  text-align: left;
+  line-height: 20px;
+}
+
+button {
+  padding: 1rem 2.3rem;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  font-size: 1.3rem;
+  border-bottom: 0.8px solid #ffffff86;
+}
+
+.bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -3;
+}
+
+.circle {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  background: var(--c);
+  border-radius: 100%;
+  z-index: -2;
+  box-shadow: 5px 5px 110px var(--c), 5px -10px 310px var(--c),
+    1px 1px 400px var(--c), 0px 0px 1110px var(--c);
+}
+
+img {
+  height: 800px;
+}
+
+.hide {
+  opacity: 0;
+}

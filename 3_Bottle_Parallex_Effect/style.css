@@ -1,0 +1,153 @@
+@font-face {
+  font-family: Sans B;
+  src: url("./Product\ Sans\ Bold.ttf");
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: #032427;
+}
+
+#main {
+  width: 100%;
+  min-height: 100vh;
+  background: #032427;
+  color: #fff;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+nav {
+  width: 90%;
+  margin: 0 auto;
+  padding: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  color: #ff4d03;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+li {
+  list-style: none;
+  color: gray;
+}
+
+li.active {
+  color: #fff;
+}
+
+button {
+  font-size: 1rem;
+  text-transform: uppercase;
+  background-color: #ff4d03;
+  color: #fff;
+  padding: 7px 12px;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+}
+
+.scroll {
+  background: none;
+  color: gray;
+  font-family: Sans B;
+  position: absolute;
+  left: 50%;
+  border: 1px solid #fff;
+  top: 25%;
+  transform: translate(-50%, -50%);
+}
+.bg-gradient {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 200px;
+}
+.bg-g2 {
+  position: absolute;
+  bottom: 10% !important;
+  right: 0 !important;
+  width: 200px;
+  transform: rotate(180deg);
+}
+
+#bottle-cap {
+  width: 150px;
+  position: absolute;
+  left: 50%;
+  top: 43%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+#bottle {
+  width: 200px;
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  z-index: 4;
+}
+
+.content {
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  font-family: Sans B;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.content h2 {
+  font-size: 3vw;
+}
+.content p {
+  color: rgb(211, 211, 211);
+  font-size: 0.9rem;
+}
+
+.conatiner {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.conatiner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
