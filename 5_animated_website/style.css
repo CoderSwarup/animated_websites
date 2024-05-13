@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=IBM+Plex+Sans:wght@400;500;600;700&family=Inconsolata:wght@400;500;600;900&family=Playpen+Sans:wght@200&family=Roboto:ital,wght@0,700;0,900;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  width: 100%;
+}
+
+.working-area {
+  width: 96%;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+nav {
+  padding: 40px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  margin: 0 20px;
+  color: #000000;
+  font-size: 1rem;
+  transition: all 0.5s ease;
+}
+
+nav div {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hero Section */
+.hero .hero-1 {
+  margin-top: 70px;
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1.8fr 1fr;
+  place-items: center;
+}
+
+/*  Hero section 1 */
+.hero .hero-1 .left .center .right {
+  width: 100%;
+}
+
+/* Hero-1 Left  */
+.hero .hero-1 .left {
+  padding-left: 40px;
+}
+
+.hero .hero-1 .left span {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.hero .hero-1 .left h4 {
+  font-family: "Roboto Slab", serif;
+  font-style: italic;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero .hero-1 .left p {
+  font-size: 17px;
+  color: #0000006c;
+}
+
+.hero .hero-1 .left img {
+  width: 120px;
+  margin-top: 30px;
+}
+
+/* Hero-1 left End */
+
+/* Hero 1 Center */
+.hero .hero-1 .center {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.hero .hero-1 .center div {
+  position: relative;
+}
+.hero .hero-1 .center div .text {
+  width: 100%;
+  position: absolute;
+  top: -55px;
+  left: -20px;
+}
+.hero .hero-1 .center div .text h2 {
+  font-size: 50px;
+  line-height: 45px;
+  font-family: "Playpen Sans", cursive;
+}
+
+.hero .hero-1 .center img {
+  width: 380px;
+  margin-bottom: 30px;
+}
+
+.hero .hero-1 .center .para p {
+  font-size: 19px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: "Roboto Slab", serif;
+}
+
+/* Hero 1 Center End */
+
+/* Hero 1 right  */
+.hero .hero-1 .right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 200px;
+}
+
+.hero .hero-1 .right img {
+  width: 40px;
+  filter: invert(60%);
+  animation: arrow-move 2s infinite alternate-reverse;
+}
+
+.hero .hero-1 .right p {
+  font-size: 17px;
+  color: #0000006c;
+}
+
+@keyframes arrow-move {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+/* Hero 1 right End */
+
+/* Hero 2 Section */
+
+.hero .hero-2 {
+  width: 80%;
+  margin: 70px auto;
+}
+
+.hero .hero-2 h2 {
+  color: #0000006c;
+  font-size: 23px;
+  margin: 20px;
+}
+
+.hero .hero-2 p {
+  width: 90%;
+  margin-left: auto;
+  line-height: 1.5em;
+  text-align: right;
+  font-size: 2rem;
+  font-family: "Playpen Sans", cursive;
+  font-weight: 900;
+}
+
+.hero .hero-2 img {
+  position: relative;
+  width: 70px;
+  height: 40px;
+  object-fit: cover;
+  top: 8px;
+  border-radius: 30px;
+}
+
+/* Hero 2 Section End */
+
+/* Hero 3 Section  */
+.hero .hero-3 {
+  width: 80%;
+  margin: 70px auto;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  padding: 20px;
+}
+
+.hero .hero-3 .left,
+.hero .hero-3 .right {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.hero .hero-3 .left img {
+  width: 250px;
+  object-fit: cover;
+  height: 400px;
+}
+
+.hero .hero-3 h2 {
+  font-family: "Roboto Slab", serif;
+  font-style: italic;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero .hero-3 p {
+  color: #0000006c;
+  font-size: 17px;
+}
+
+.hero .hero-3 .right img {
+  margin: 0 0 20px 60px;
+  width: 350px;
+  height: 600px;
+  object-fit: cover;
+}
+
+.hero .hero-3 .right {
+  text-align: right;
+}
+
+.gallary {
+  margin: 50px 0;
+  min-height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gallary .gallary-img {
+  width: 70%;
+}
+
+.gallary .gallary-img img {
+  width: 1000px;
+  height: 600px;
+  object-position: center;
+  object-fit: cover;
+}
+
+.gallary .text {
+  width: 50%;
+  display: grid;
+  place-items: center;
+  text-align: left;
+}
+
+.gallary .text h2 {
+  font-size: 40px;
+  font-family: "Playpen Sans", cursive;
+  line-height: 39px;
+}
+
+.gallary .text h2:nth-child(2) {
+  margin-bottom: 20px;
+}
+.gallary .text p {
+  color: #0000006c;
+  font-size: 17px;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
+}
+
+.footer video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.footer .overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 2;
+  transition: all 0.5s ease;
+}
+
+.footer .overlay.new {
+  opacity: 20;
+}
+
+.footer .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  display: grid;
+  place-items: center;
+}
+
+.footer .text div {
+  background: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+}
+
+.footer .text h2 {
+  font-family: "Playpen Sans", cursive;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+.footer button {
+  background: linear-gradient(to right, #ffff, #0000006c);
+  border: none;
+  padding: 5px 10px;
+  font-size: 20px;
+  border-radius: 30px;
+}
+
+button:hover .footer .overlay {
+  background: none;
+}
+
+@media screen and (max-width: 950px) {
+  .hero .hero-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+  }
+
+  .hero .hero-3 {
+    place-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .hero .hero-3 .right img {
+    margin: 0;
+  }
+
+  .footer video {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .gallary {
+    flex-direction: column;
+    gap: 40px;
+  }
+}

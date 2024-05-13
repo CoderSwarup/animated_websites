@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LocoMotive Smooth Scrolling Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container" data-scroll-container>
+      <div>
+        <div class="text" data-scroll data-scroll-speed="1">
+          <h1>Developer Swarup</h1>
+        </div>
+      </div>
+      <div class="grid">
+        <img src="./img/l.jpg" alt="" data-scroll data-scroll-speed="2" />
+        <img src="./img/r.jpg" alt="" data-scroll data-scroll-speed="-10" />
+      </div>
+      <div>
+        <div class="text" data-scroll data-scroll-speed="3">
+          <h1>The scrolling animation</h1>
+        </div>
+      </div>
+      <div class="textmove">
+        <div class="span">
+          <span data-scroll data-scroll-speed="2">s</span>
+          <span data-scroll data-scroll-speed=".3">c</span>
+          <span data-scroll data-scroll-speed="3">r</span>
+          <span data-scroll data-scroll-speed=".6">o</span>
+          <span data-scroll data-scroll-speed="3">l</span>
+          <span data-scroll data-scroll-speed=".8">l</span>
+          <span data-scroll data-scroll-speed="3">i</span>
+          <span data-scroll data-scroll-speed=".2">g</span>
+          <span data-scroll data-scroll-speed="3">g</span>
+        </div>
+      </div>
+
+      <div class="para" data-scroll data-scroll-speed="2">
+        <p
+          data-scroll
+          data-scroll-speed="-2"
+          data-scroll-direction="horizontal"
+        >
+          Do You Love Scrolling
+        </p>
+        <p data-scroll data-scroll-speed="2" data-scroll-direction="horizontal">
+          Scroll more to see
+        </p>
+      </div>
+
+      <div class="sticky">
+        <div id="pinSection">
+          <blockquote
+            data-scroll
+            data-scroll-sticky
+            data-scroll-target="#pinSection"
+          >
+            <h1>S<br />B</h1>
+            <p data-scroll data-scroll-speed="2" data-scroll-direction="bottom">
+              TO SEE
+            </p>
+          </blockquote>
+        </div>
+
+        <div class="images-container">
+          <p>locomotive animation</p>
+          <div class="img">
+            <img src="./img/b3.jpg" alt="" />
+            <img src="./img/b4.jpg" alt="" />
+            <img src="./img/b2.jpg" alt="" />
+            <img src="./img/b7.jpg" alt="" />
+            <img src="./img/b1.jpg" alt="" />
+            <img src="./img/b9.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="footer" data-scroll-container data-scroll>
+        <div class="image-wrapper">
+          <img src="./img/04.jpg" alt="" />
+        </div>
+        <div class="ftext">
+          <h1 data-scroll-speed="6" data-scroll>
+            Please Follow For More to CoderSwarup
+          </h1>
+          <p data-scroll-position="bottom" data-scroll-speed="60" data-scroll>
+            Leave comment about it
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Menu</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="web-content">
+      <div class="hero-img"></div>
+    </div>
+
+    <nav>
+      <div class="info">
+        <p>Coder Swarup</p>
+      </div>
+
+      <div class="logo">
+        <p><a href="#"> The Elite PortFolio</a></p>
+      </div>
+      <div class="toggle-btn">
+        <button
+          class="burger"
+          onclick="this.classList.toggle('active')"
+        ></button>
+      </div>
+    </nav>
+
+    <div class="overlay">
+      <div class="line"></div>
+      <div class="overlay-menu">
+        <div class="menu-items">
+          <p id="active"><a href="#">Home</a></p>
+        </div>
+        <div class="menu-items">
+          <p><a href="#">Work</a></p>
+        </div>
+        <div class="menu-items">
+          <p><a href="#">About</a></p>
+        </div>
+      </div>
+
+      <div class="sub-menu">
+        <p><a href="#">Twitter</a></p>
+        <p>.</p>
+        <p><a href="#">Instagram</a></p>
+        <p>.</p>
+        <p><a href="#">Dribble</a></p>
+        <p>.</p>
+        <p><a href="#">Github</a></p>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CSSRulePlugin.min.js"
+      integrity="sha512-IxxYrSNXnt/RJlxNX40+7BQL88FLqvdpVpuV9AuvpNH/NFP0L8xA8WLxWTXx6PYExB5R/ktQisp6tIrnLn8xvw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let activeIndicate = CSSRulePlugin.getRule(
+          ".menu-items p#active::after"
+        );
+
+        const toggleBtn = document.querySelector(".burger");
+        let isOpen = false;
+
+        gsap.set(".menu-items p", { y: 255 });
+
+        let tl = gsap.timeline({ paused: true });
+
+        tl.to(".overlay", {
+          duration: 1,
+          clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+          ease: "power4.inOut",
+        });
+
+        tl.to(".line", {
+          duration: 0.5,
+          width: "100%",
+          ease: "power4.inOut",
+        });
+
+        tl.to(
+          ".menu-items p",
+          {
+            duration: 1,
+            y: 0,
+            stagger: 0.2,
+            ease: "power4.Out",
+          },
+          "-=1"
+        );
+
+        tl.to(
+          activeIndicate,
+          {
+            width: "100%",
+            duration: 1,
+            ease: "power4.inOut",
+            delay: 0.5,
+          },
+          "<"
+        );
+
+        tl.to(
+          ".sub-menu",
+          {
+            bottom: "10%",
+            opacity: 1,
+            duration: 0.5,
+            delay: 0.5,
+          },
+          "<"
+        );
+
+        toggleBtn.addEventListener("click", () => {
+          if (isOpen) {
+            console.log("CC");
+            tl.reverse();
+          } else {
+            tl.play();
+            console.log(tl.play());
+          }
+
+          isOpen = !isOpen;
+        });
+      });
+    </script>
+  </body>
+</html>
