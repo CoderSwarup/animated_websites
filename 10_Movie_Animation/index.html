@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div id="main">
+      <!-- <div id="loader" class="loader"></div> -->
+
+      <nav>
+        <div class="left">
+          <h2>Movies</h2>
+          <button>WATCH NOW</button>
+        </div>
+        <div class="right">
+          <div class="profile">
+            <i class="ri-account-pin-circle-fill"></i>
+            <div class="details">
+              <p>Coder</p>
+              <span>Swarup</span>
+            </div>
+          </div>
+          <i class="ri-search-line"></i>
+          <i class="ri-menu-line"></i>
+        </div>
+      </nav>
+
+      <!-- Main Banner -->
+
+      <div id="banner">
+        <div class="overlay"></div>
+        <div class="backword">
+          <img id="forwardBanner" src="./Images/BigBanner/2_Fastx.jpg" alt="" />
+        </div>
+        <div class="forward">
+          <img
+            id="backwordBanner"
+            src="./Images/BigBanner/1_marvels.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="movie-data">
+        <div class="movie-details">
+          <div class="movie_name">
+            <h1>01</h1>
+            <h2>Movie Name : Name</h2>
+          </div>
+          <div class="movie-info">
+            <div class="stars">
+              <span class="fa fa-star"></span>
+            </div>
+            <p class="director">Beau DeMayo</p>
+            <p class="actor">George Buza</p>
+          </div>
+          <div class="movie-category">
+            <p>Category</p>
+            <div class="category-btn">
+              <span>COMEDY</span>
+              <span>DRAMA</span>
+            </div>
+          </div>
+          <div class="btns">
+            <button>BOOK TICKET NOW</button>
+            <button>WATCH NOW <i class="fa fa-play"></i></button>
+          </div>
+        </div>
+
+        <div class="movies-images">
+          <div class="Slider-btns">
+            <button>&lt;</button>
+            <button>&gt;</button>
+          </div>
+          <div class="movies-slider">
+            <div class="slider">
+              <div class="movie-small-banner">
+                <span>1</span>
+                <img src="./Images/SmallBanner/1_Marvel.jpg" alt="1_Marvel" />
+              </div>
+            </div>
+          </div>
+          .
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module" defer src="main.js"></script>
+  </body>
+</html>
